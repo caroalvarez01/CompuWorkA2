@@ -1,35 +1,32 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JDialog.java to edit this template
  */
 package compuworka2.CapaPresentacion;
 
-import compuworka2.CompuWorkA2;
-import java.awt.Color;
 import javax.swing.ImageIcon;
-import javax.swing.JPanel;
 
 /**
  *
  * @author caralvarezrob01
  */
-public class VentanaPrincipal extends javax.swing.JFrame {
+public class agregarEmpleado extends javax.swing.JDialog {
 
     /**
-     * Creates new form VentanaPrincipal
+     * Creates new form agregarEmpleado
      */
-    
-    public VentanaPrincipal() {
+    public agregarEmpleado(java.awt.Frame parent, boolean modal) {
+        super(parent, modal);
         initComponents();
-        this.setLocationRelativeTo(null);
+        
+         this.setLocationRelativeTo(null);
         try   {
 
-            this.setIconImage(new ImageIcon(getClass().getResource("/compuworka2/images/compuwork.png")).getImage());
+            this.setIconImage(new ImageIcon(getClass().getResource("/compuworka2/images/nuevoempleado.png")).getImage());
               
         } catch (Exception e){
           System.out.println("Imagen no encontrada");
         }
-        
     }
 
     /**
@@ -41,10 +38,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jDialog1 = new javax.swing.JDialog();
-        jDialog2 = new javax.swing.JDialog();
-        jDialog3 = new javax.swing.JDialog();
-        jDialog4 = new javax.swing.JDialog();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
@@ -63,54 +56,21 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         btniniciarSesion = new javax.swing.JPanel();
         icon4 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-
-        javax.swing.GroupLayout jDialog1Layout = new javax.swing.GroupLayout(jDialog1.getContentPane());
-        jDialog1.getContentPane().setLayout(jDialog1Layout);
-        jDialog1Layout.setHorizontalGroup(
-            jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        jDialog1Layout.setVerticalGroup(
-            jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
-
-        javax.swing.GroupLayout jDialog2Layout = new javax.swing.GroupLayout(jDialog2.getContentPane());
-        jDialog2.getContentPane().setLayout(jDialog2Layout);
-        jDialog2Layout.setHorizontalGroup(
-            jDialog2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        jDialog2Layout.setVerticalGroup(
-            jDialog2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
-
-        javax.swing.GroupLayout jDialog3Layout = new javax.swing.GroupLayout(jDialog3.getContentPane());
-        jDialog3.getContentPane().setLayout(jDialog3Layout);
-        jDialog3Layout.setHorizontalGroup(
-            jDialog3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        jDialog3Layout.setVerticalGroup(
-            jDialog3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
-
-        javax.swing.GroupLayout jDialog4Layout = new javax.swing.GroupLayout(jDialog4.getContentPane());
-        jDialog4.getContentPane().setLayout(jDialog4Layout);
-        jDialog4Layout.setHorizontalGroup(
-            jDialog4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        jDialog4Layout.setVerticalGroup(
-            jDialog4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
-
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setResizable(false);
-        setSize(new java.awt.Dimension(650, 380));
+        jPanel3 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        jPanel4 = new javax.swing.JPanel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        txtNombreEmpleado = new javax.swing.JTextField();
+        txtSalarioEmpleado = new javax.swing.JTextField();
+        txtProfesionEmpleado = new javax.swing.JTextField();
+        txtidEmpleado = new javax.swing.JTextField();
+        txtTelefonoEmpleado = new javax.swing.JTextField();
+        volverEmpleado = new javax.swing.JButton();
+        agregarEmpleado = new javax.swing.JButton();
 
         jPanel1.setBackground(new java.awt.Color(18, 150, 157));
 
@@ -364,8 +324,8 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                     .addComponent(btnmodificarEmpleado, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnabuscarEmpleado, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnagregarEmpleado, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btniniciarSesion, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                    .addComponent(btncrearReporte, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                    .addComponent(btniniciarSesion, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(btncrearReporte, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE))
                 .addContainerGap(955, Short.MAX_VALUE))
         );
 
@@ -388,118 +348,277 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+
+        jPanel3.setBackground(new java.awt.Color(18, 150, 157));
+
+        jLabel2.setFont(new java.awt.Font("Kohinoor Telugu", 1, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/compuworka2/images/compuwork.png"))); // NOI18N
+        jLabel2.setText("Agregar Empleado");
+        jLabel2.setSize(new java.awt.Dimension(56, 17));
+
+        jPanel4.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel8.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
+        jLabel8.setText("Nombre");
+
+        jLabel9.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
+        jLabel9.setText("Teléfono");
+
+        jLabel10.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
+        jLabel10.setText("Salario");
+
+        jLabel11.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
+        jLabel11.setText("Profesión");
+
+        jLabel12.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
+        jLabel12.setText("idEmpleado");
+
+        txtNombreEmpleado.setText("jTextField1");
+        txtNombreEmpleado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNombreEmpleadoActionPerformed(evt);
+            }
+        });
+
+        txtSalarioEmpleado.setText("jTextField1");
+        txtSalarioEmpleado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtSalarioEmpleadoActionPerformed(evt);
+            }
+        });
+
+        txtProfesionEmpleado.setText("jTextField1");
+
+        txtidEmpleado.setText("jTextField1");
+
+        txtTelefonoEmpleado.setText("jTextField1");
+
+        volverEmpleado.setBackground(new java.awt.Color(18, 150, 157));
+        volverEmpleado.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
+        volverEmpleado.setForeground(new java.awt.Color(255, 255, 255));
+        volverEmpleado.setText("Volver");
+        volverEmpleado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                volverEmpleadoActionPerformed(evt);
+            }
+        });
+
+        agregarEmpleado.setBackground(new java.awt.Color(18, 150, 157));
+        agregarEmpleado.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
+        agregarEmpleado.setForeground(new java.awt.Color(255, 255, 255));
+        agregarEmpleado.setText("Agregar");
+        agregarEmpleado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                agregarEmpleadoActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(96, 96, 96)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel12)
+                            .addComponent(jLabel9)
+                            .addComponent(jLabel8))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel10)
+                            .addComponent(jLabel11))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(txtNombreEmpleado, javax.swing.GroupLayout.DEFAULT_SIZE, 155, Short.MAX_VALUE)
+                    .addComponent(txtTelefonoEmpleado)
+                    .addComponent(txtSalarioEmpleado)
+                    .addComponent(txtProfesionEmpleado)
+                    .addComponent(txtidEmpleado))
+                .addGap(132, 132, 132))
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(148, 148, 148)
+                .addComponent(agregarEmpleado)
+                .addGap(65, 65, 65)
+                .addComponent(volverEmpleado)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(105, 105, 105)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel8)
+                    .addComponent(txtNombreEmpleado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(jLabel9)
+                        .addGap(29, 29, 29))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                        .addComponent(txtTelefonoEmpleado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)))
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel10)
+                    .addComponent(txtSalarioEmpleado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel11)
+                    .addComponent(txtProfesionEmpleado, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(15, 15, 15)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel12)
+                    .addComponent(txtidEmpleado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(102, 102, 102)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(agregarEmpleado)
+                    .addComponent(volverEmpleado))
+                .addContainerGap(741, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(118, 118, 118)
+                .addComponent(jLabel2)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addContainerGap(26, Short.MAX_VALUE)
+                .addComponent(jLabel2)
+                .addGap(18, 18, 18)
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btncrearReporteMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btncrearReporteMouseExited
+    private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
+        // jLabel3.setBackground(Color.WHITE); ESTABA HACIENDO PRUEBAS PERO NO ME SALIO PROFE.
+    }//GEN-LAST:event_jLabel3MouseClicked
 
-        this.mouseSaliendo(btncrearReporte);
-    }//GEN-LAST:event_btncrearReporteMouseExited
-
-    private void btncrearReporteMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btncrearReporteMouseEntered
-
-        this.mouseEntrando(btncrearReporte);
-    }//GEN-LAST:event_btncrearReporteMouseEntered
-
-    private void btncrearReporteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btncrearReporteMouseClicked
-
-        System.out.println("Creando Reporte");
-    }//GEN-LAST:event_btncrearReporteMouseClicked
-
-    private void btnagregarEmpleadoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnagregarEmpleadoMouseExited
-        // btnagregarEmpleado.setBackground(new Color(242,242,242));
-        this.mouseSaliendo(btnagregarEmpleado);
-    }//GEN-LAST:event_btnagregarEmpleadoMouseExited
+    private void btnagregarEmpleadoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnagregarEmpleadoMouseClicked
+        System.out.println("Agregando nuevo Empleado");
+    }//GEN-LAST:event_btnagregarEmpleadoMouseClicked
 
     private void btnagregarEmpleadoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnagregarEmpleadoMouseEntered
         //  btnagregarEmpleado.setBackground(new Color(18,150,157));
         this.mouseEntrando(btnagregarEmpleado);
     }//GEN-LAST:event_btnagregarEmpleadoMouseEntered
 
-    private void btnagregarEmpleadoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnagregarEmpleadoMouseClicked
-        System.out.println("Agregando nuevo Empleado");
-    }//GEN-LAST:event_btnagregarEmpleadoMouseClicked
+    private void btnagregarEmpleadoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnagregarEmpleadoMouseExited
+        // btnagregarEmpleado.setBackground(new Color(242,242,242));
+        this.mouseSaliendo(btnagregarEmpleado);
+    }//GEN-LAST:event_btnagregarEmpleadoMouseExited
 
-    private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
-        // jLabel3.setBackground(Color.WHITE); ESTABA HACIENDO PRUEBAS PERO NO ME SALIO PROFE.
-    }//GEN-LAST:event_jLabel3MouseClicked
+    private void btnabuscarEmpleadoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnabuscarEmpleadoMouseClicked
 
-    private void btniniciarSesionMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btniniciarSesionMouseExited
+        System.out.println("Buscando nuevo Empleado");
 
-        this.mouseSaliendo(btniniciarSesion);
-    }//GEN-LAST:event_btniniciarSesionMouseExited
-
-    private void btniniciarSesionMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btniniciarSesionMouseEntered
-
-        this.mouseEntrando(btniniciarSesion);
-    }//GEN-LAST:event_btniniciarSesionMouseEntered
-
-    private void btniniciarSesionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btniniciarSesionMouseClicked
-
-        System.out.println("Iniciando Sesión");
-    }//GEN-LAST:event_btniniciarSesionMouseClicked
-
-    private void btnmodificarEmpleadoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnmodificarEmpleadoMouseExited
-
-        this.mouseSaliendo(btnmodificarEmpleado);
-    }//GEN-LAST:event_btnmodificarEmpleadoMouseExited
-
-    private void btnmodificarEmpleadoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnmodificarEmpleadoMouseEntered
-
-        this.mouseEntrando(btnmodificarEmpleado);
-    }//GEN-LAST:event_btnmodificarEmpleadoMouseEntered
-
-    private void btnmodificarEmpleadoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnmodificarEmpleadoMouseClicked
-
-        System.out.println("Modificando nuevo Empleado");
-    }//GEN-LAST:event_btnmodificarEmpleadoMouseClicked
-
-    private void btnabuscarEmpleadoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnabuscarEmpleadoMouseExited
-
-        this.mouseSaliendo(btnabuscarEmpleado);
-    }//GEN-LAST:event_btnabuscarEmpleadoMouseExited
+    }//GEN-LAST:event_btnabuscarEmpleadoMouseClicked
 
     private void btnabuscarEmpleadoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnabuscarEmpleadoMouseEntered
 
         this.mouseEntrando(btnabuscarEmpleado);
     }//GEN-LAST:event_btnabuscarEmpleadoMouseEntered
 
-    private void btnabuscarEmpleadoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnabuscarEmpleadoMouseClicked
+    private void btnabuscarEmpleadoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnabuscarEmpleadoMouseExited
 
-        System.out.println("Buscando nuevo Empleado");
-    }//GEN-LAST:event_btnabuscarEmpleadoMouseClicked
+        this.mouseSaliendo(btnabuscarEmpleado);
+    }//GEN-LAST:event_btnabuscarEmpleadoMouseExited
+
+    private void btnmodificarEmpleadoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnmodificarEmpleadoMouseClicked
+
+        System.out.println("Modificando nuevo Empleado");
+    }//GEN-LAST:event_btnmodificarEmpleadoMouseClicked
+
+    private void btnmodificarEmpleadoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnmodificarEmpleadoMouseEntered
+
+        this.mouseEntrando(btnmodificarEmpleado);
+    }//GEN-LAST:event_btnmodificarEmpleadoMouseEntered
+
+    private void btnmodificarEmpleadoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnmodificarEmpleadoMouseExited
+
+        this.mouseSaliendo(btnmodificarEmpleado);
+    }//GEN-LAST:event_btnmodificarEmpleadoMouseExited
+
+    private void btncrearReporteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btncrearReporteMouseClicked
+
+        System.out.println("Creando Reporte");
+    }//GEN-LAST:event_btncrearReporteMouseClicked
+
+    private void btncrearReporteMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btncrearReporteMouseEntered
+
+        this.mouseEntrando(btncrearReporte);
+    }//GEN-LAST:event_btncrearReporteMouseEntered
+
+    private void btncrearReporteMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btncrearReporteMouseExited
+
+        this.mouseSaliendo(btncrearReporte);
+    }//GEN-LAST:event_btncrearReporteMouseExited
+
+    private void btniniciarSesionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btniniciarSesionMouseClicked
+
+        System.out.println("Iniciando Sesión");
+    }//GEN-LAST:event_btniniciarSesionMouseClicked
+
+    private void btniniciarSesionMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btniniciarSesionMouseEntered
+
+        this.mouseEntrando(btniniciarSesion);
+    }//GEN-LAST:event_btniniciarSesionMouseEntered
+
+    private void btniniciarSesionMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btniniciarSesionMouseExited
+
+        this.mouseSaliendo(btniniciarSesion);
+    }//GEN-LAST:event_btniniciarSesionMouseExited
+
+    private void txtSalarioEmpleadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSalarioEmpleadoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtSalarioEmpleadoActionPerformed
+
+    private void volverEmpleadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_volverEmpleadoActionPerformed
+        this.dispose();
+    }//GEN-LAST:event_volverEmpleadoActionPerformed
+
+    private void agregarEmpleadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_agregarEmpleadoActionPerformed
+        String nombre=this.txtNombreEmpleado.getText();
+        String telefono=this.txtTelefonoEmpleado.getText();
+        
+    }//GEN-LAST:event_agregarEmpleadoActionPerformed
+
+    private void txtNombreEmpleadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombreEmpleadoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNombreEmpleadoActionPerformed
 
     /**
      * @param args the command line arguments
      */
-    //métodos para optimizar código
-   private void  mouseEntrando(JPanel panel){
-       
-       panel.setBackground(new Color(18,150,157));
-       
-   }
-   
-   private void  mouseSaliendo(JPanel panel){
-       
-       panel.setBackground(new Color(242,242,242));
-   }
-           
-           
-           
+    
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton agregarEmpleado;
     private javax.swing.JPanel btnabuscarEmpleado;
     private javax.swing.JPanel btnagregarEmpleado;
     private javax.swing.JPanel btncrearReporte;
@@ -510,21 +629,27 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel icon2;
     private javax.swing.JLabel icon3;
     private javax.swing.JLabel icon4;
-    private javax.swing.JDialog jDialog1;
-    private javax.swing.JDialog jDialog2;
-    private javax.swing.JDialog jDialog3;
-    private javax.swing.JDialog jDialog4;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JTextField txtNombreEmpleado;
+    private javax.swing.JTextField txtProfesionEmpleado;
+    private javax.swing.JTextField txtSalarioEmpleado;
+    private javax.swing.JTextField txtTelefonoEmpleado;
+    private javax.swing.JTextField txtidEmpleado;
+    private javax.swing.JButton volverEmpleado;
     // End of variables declaration//GEN-END:variables
-
-    
-
-    
 }
